@@ -10,6 +10,10 @@ class ToDoCubit extends Cubit<List<Todo>> {
   }
 
   void deleteTask(int index) {
+
+
+
+
     final List<Todo> updatedTasks = List.from(state)..removeAt(index);
     emit(updatedTasks);
   }
